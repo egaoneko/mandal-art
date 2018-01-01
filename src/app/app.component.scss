@@ -1,0 +1,57 @@
+:host {
+  .wrapper {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    background: #fff;
+    color: #444;
+    width: 100vw;
+    height: 100vh;
+
+    header {
+      display: grid;
+      grid-gap: 2px;
+      grid-template-columns: repeat(9, 1fr);
+      grid-column: 2 / 12;
+      grid-row: 1 / 2;
+      background: #fafafa;
+      overflow: auto;
+
+      a {
+        color: #2194CE;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .title {
+        grid-column: 1 / 2;
+        margin: auto 0;
+      }
+
+      .mandal-art-title {
+        grid-column: 2 / 8;
+        margin: auto 30px;
+        
+        h2 {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;        
+        }
+      }
+
+      .nav {
+        grid-column: 8 / 10;
+        margin: auto 0;
+
+        select {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

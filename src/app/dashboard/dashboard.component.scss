@@ -1,0 +1,35 @@
+:host {
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column: 2 / 12;
+  grid-row: 2 / 12;
+  background: #fafafa;
+  overflow: auto;
+
+  .card {
+    margin: 10px 10px;
+    padding: 10px 20px;
+  }
+  
+  .card h2 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 5px 0;
+    margin-bottom: 8px;
+  }
+  
+  .card p {
+    margin: 20px 0;
+  }
+
+  a {
+    color: #2194CE;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+}

@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  box-sizing: border-box;
+  color: #555;
+  font-family: 'inconsolata', serif;
+}
+
+html, body {
+  height: 100vh;
+  margin:0; 
+  padding:0;
+  overflow: hidden;
+}
+
+body {
+  color: #555;
+  font-family: 'inconsolata', serif;
+}
+
+a {
+  color: #2194CE;
+  text-decoration: none;
+}
