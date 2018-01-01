@@ -118,6 +118,10 @@ var AppComponent = (function () {
             _this.selectedMandalArt = mandalArt;
             var isSelected = false;
             var options = _this.selecElf.nativeElement.querySelectorAll('option');
+            if (!mandalArt) {
+                options[0].selected = true;
+                return;
+            }
             options.forEach(function (option) {
                 if (option.value !== mandalArt.id.toString()) {
                     return;

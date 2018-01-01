@@ -40,6 +40,12 @@ export class AppComponent implements OnInit, OnDestroy {
 
           let isSelected: boolean = false;
           const options: HTMLOptionElement[] = this.selecElf.nativeElement.querySelectorAll('option');
+
+          if (!mandalArt) {
+            options[0].selected = true;
+            return;
+          }
+
           options.forEach((option: HTMLOptionElement) => {
             if (option.value !== mandalArt.id.toString()) {
               return;
