@@ -37,9 +37,20 @@
             height: 100%;
             border: none;
             resize: none;
-            font-size: 1.2em;            
+            background-color: transparent;
+            text-align: center;
+            font-size: 1.2em;      
           }
         }
+      }
+
+      .center-sub,
+      .main {
+        background-color: #E5E4F0;
+      }
+
+      .center-main {
+        background-color: #A6D0E0;
       }
     }
   }

@@ -1,10 +1,10 @@
 <div *ngIf="mandalArt" class="mandal-art">
   <div class="goal" *ngFor="let goal of mandalArtViewGoals">
     <ng-container *ngFor="let detail of goal.detail; let index=index">
-        <div class="detail" *ngIf="index === 4">
+        <div class="detail center-{{goal.class}}" [attr.title]="goal.description" *ngIf="index === 4">
           <div><textarea disabled>{{goal.title}}</textarea></div>
         </div>
-        <div class="detail">
+        <div class="detail {{goal.class}}" [attr.title]="detail.description">
           <div><textarea disabled>{{detail.title}}</textarea></div>
         </div>
     </ng-container>
